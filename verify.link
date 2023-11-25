@@ -20,7 +20,7 @@
     "sha256": "b3f804303a69d13b1bb53907fb67ae4f5f6780f30261b442d948a09774b63c8a"
    },
    "README.md": {
-    "sha256": "307451374e52dce2d0bae690e7b4e288560ad99b28c604e68e9153a30bbf9e5a"
+    "sha256": "28c0ad8067ee3e5669534741f5dde30baeaeb5dc8798e92c60c52ad0e99e1f3f"
    },
    "functionary-bob/bob": {
     "sha256": "9484e07b40a0d9c279e33054fa976e4ae5de6191b29e96ef4ce1d13af7626b34"
@@ -32,13 +32,13 @@
     "sha256": "3b3af1a15bd5f136071388cbc055452e19f3f331d59661988264038d5096e632"
    },
    "gittuf-delegation/Makefile": {
-    "sha256": "1cd15df12a2940236f1b6e127432bffebe985c47734c6adf5d77b870e5e9a841"
+    "sha256": "1f9c85dc42549142b7b2692b500557e0ed3560996f68786414c5fa34cb65e9fc"
    },
    "gittuf-delegation/README.md": {
-    "sha256": "080954816cb3356474c422ef535565f930ad4385aeeda4d198c609b7f02deed1"
+    "sha256": "32fa49d68682ab87a6cbb869cff56f56eac9ece2b0d88091853863e73991542c"
    },
-   "gittuf-delegation/bom-go-mod.spdx": {
-    "sha256": "b70b152945893a310a76d659b5be8516d64cbcd7510d11b8fdc5f7359f667ad7"
+   "gittuf-delegation/bom-go-mod.json": {
+    "sha256": "1f865ec5f6130ad65a31626852949a80b19ad13da213cd79afce0e46bea54afd"
    },
    "gittuf-delegation/go.mod": {
     "sha256": "a2f7257a41f70afbb6252d4eb656b9c8f8d2738a74d425d5d9ef989eb6a88e36"
@@ -89,16 +89,34 @@
     "sha256": "54d66a3cda423bb31027f388ffb6753a37e7bd5d9d883140fb818dac73456695"
    },
    "owner-alice/create-layout.py": {
-    "sha256": "5d894844a43bfd74fb415585e78f580660545198ec076c4407e6301c35b98c5d"
+    "sha256": "05fe98855d67f3f406de3dc83c90d46aa98a25dc445d338820143b3bc24eddf5"
+   },
+   "policy-signed.json": {
+    "sha256": "e8fe72744da4dcfa66d87573a8b18bf02dd62d3053f74c9fdbc0baf2229ca12e"
    },
    "requirements.txt": {
     "sha256": "5ebbad7d3b5e325dc85af6d79f15f0f5bdb816f3d2bee016b25b311a86175ba9"
    },
    "root.layout": {
-    "sha256": "2b741f98d855d987a2136822ab184c1bd6a1d0db0282db01bdf8aa8dde48997b"
+    "sha256": "e00b79387fdf0e6bf64811090668af27f1c31be6f8543ecc5bfcaac2a67aaca9"
+   },
+   "run-alt-demo.py": {
+    "sha256": "7e1ab494c468726e22aafbaa3dbd4ebf0f0594f2b0dc7cae64d90f13a123b877"
    },
    "run-demo.py": {
-    "sha256": "7e1ab494c468726e22aafbaa3dbd4ebf0f0594f2b0dc7cae64d90f13a123b877"
+    "sha256": "81ccb6e1fde041c6dba37db9fae934fbba3d1d28973b61913b4f1fc1777aefc1"
+   },
+   "test-att.json": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "testkey.pem": {
+    "sha256": "0fed3e44103276fda5332ee6da21a5114c3c7b0ea6a5cb81c0251e558bf653a3"
+   },
+   "testpub.pem": {
+    "sha256": "b52910f6fc3c4a007b410b076e281c9e2bd937139d1f7b7ae04bf1f70ee9900c"
+   },
+   "witness.yaml": {
+    "sha256": "69260a306e16e830492f0dc740c8801714fe59044101ed70879a39c02b6b78ec"
    }
   },
   "name": "verify",
@@ -110,7 +128,7 @@
     "sha256": "b3f804303a69d13b1bb53907fb67ae4f5f6780f30261b442d948a09774b63c8a"
    },
    "README.md": {
-    "sha256": "307451374e52dce2d0bae690e7b4e288560ad99b28c604e68e9153a30bbf9e5a"
+    "sha256": "28c0ad8067ee3e5669534741f5dde30baeaeb5dc8798e92c60c52ad0e99e1f3f"
    },
    "functionary-bob/bob": {
     "sha256": "9484e07b40a0d9c279e33054fa976e4ae5de6191b29e96ef4ce1d13af7626b34"
@@ -122,13 +140,13 @@
     "sha256": "3b3af1a15bd5f136071388cbc055452e19f3f331d59661988264038d5096e632"
    },
    "gittuf-delegation/Makefile": {
-    "sha256": "1cd15df12a2940236f1b6e127432bffebe985c47734c6adf5d77b870e5e9a841"
+    "sha256": "1f9c85dc42549142b7b2692b500557e0ed3560996f68786414c5fa34cb65e9fc"
    },
    "gittuf-delegation/README.md": {
-    "sha256": "080954816cb3356474c422ef535565f930ad4385aeeda4d198c609b7f02deed1"
+    "sha256": "32fa49d68682ab87a6cbb869cff56f56eac9ece2b0d88091853863e73991542c"
    },
-   "gittuf-delegation/bom-go-mod.spdx": {
-    "sha256": "b70b152945893a310a76d659b5be8516d64cbcd7510d11b8fdc5f7359f667ad7"
+   "gittuf-delegation/bom-go-mod.json": {
+    "sha256": "1f865ec5f6130ad65a31626852949a80b19ad13da213cd79afce0e46bea54afd"
    },
    "gittuf-delegation/go.mod": {
     "sha256": "a2f7257a41f70afbb6252d4eb656b9c8f8d2738a74d425d5d9ef989eb6a88e36"
@@ -179,16 +197,34 @@
     "sha256": "54d66a3cda423bb31027f388ffb6753a37e7bd5d9d883140fb818dac73456695"
    },
    "owner-alice/create-layout.py": {
-    "sha256": "5d894844a43bfd74fb415585e78f580660545198ec076c4407e6301c35b98c5d"
+    "sha256": "05fe98855d67f3f406de3dc83c90d46aa98a25dc445d338820143b3bc24eddf5"
+   },
+   "policy-signed.json": {
+    "sha256": "e8fe72744da4dcfa66d87573a8b18bf02dd62d3053f74c9fdbc0baf2229ca12e"
    },
    "requirements.txt": {
     "sha256": "5ebbad7d3b5e325dc85af6d79f15f0f5bdb816f3d2bee016b25b311a86175ba9"
    },
    "root.layout": {
-    "sha256": "2b741f98d855d987a2136822ab184c1bd6a1d0db0282db01bdf8aa8dde48997b"
+    "sha256": "e00b79387fdf0e6bf64811090668af27f1c31be6f8543ecc5bfcaac2a67aaca9"
+   },
+   "run-alt-demo.py": {
+    "sha256": "7e1ab494c468726e22aafbaa3dbd4ebf0f0594f2b0dc7cae64d90f13a123b877"
    },
    "run-demo.py": {
-    "sha256": "7e1ab494c468726e22aafbaa3dbd4ebf0f0594f2b0dc7cae64d90f13a123b877"
+    "sha256": "81ccb6e1fde041c6dba37db9fae934fbba3d1d28973b61913b4f1fc1777aefc1"
+   },
+   "test-att.json": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "testkey.pem": {
+    "sha256": "0fed3e44103276fda5332ee6da21a5114c3c7b0ea6a5cb81c0251e558bf653a3"
+   },
+   "testpub.pem": {
+    "sha256": "b52910f6fc3c4a007b410b076e281c9e2bd937139d1f7b7ae04bf1f70ee9900c"
+   },
+   "witness.yaml": {
+    "sha256": "69260a306e16e830492f0dc740c8801714fe59044101ed70879a39c02b6b78ec"
    }
   }
  }

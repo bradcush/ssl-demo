@@ -42,6 +42,12 @@ def main():
               ["ALLOW", "run-demo.py"],
               ["ALLOW", "owner-alice/*"],
               ["ALLOW", "README.md"],
+              ["ALLOW", "test-att.json"],
+              ["ALLOW", "policy-signed.json"],
+              ["ALLOW", "testpub.pem"],
+              ["ALLOW", "testkey.pem"],
+              ["ALLOW", "run-alt-demo.py"],
+              ["ALLOW", "witness.yaml"],
               ["DISALLOW", "*"]
           ],
           # Specification requires command

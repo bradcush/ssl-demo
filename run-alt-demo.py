@@ -19,32 +19,30 @@ def prompt_key(prompt):
       pass
 
 def supply_chain():
+
+  prompt_key("Define supply chain layout (Alice)")
+  create_layout_cmd = "python owner-alice/create-layout.py"
+  print(create_layout_cmd)
+  subprocess.call(shlex.split(create_layout_cmd))
+
   prompt_key("Clone and build source code (Bob)")
-  build_cmd = ("witness run"
-                    " --step build"
-                    " -o test-att.json"
-                    " --signer-file-key-path testkey.pem"
+  clone_cmd = ("in-toto-run"
+                    " --verbose"
+                    " --step-name build"
+                    " --use-dsse"
+                    " --products gittuf-delegation/hello"
+                    " --key functionary-bob/bob"
                     " -- make build")
-  print(build_cmd)
-  subprocess.call(shlex.split(build_cmd))
+  print(clone_cmd)
+  subprocess.call(shlex.split(clone_cmd))
 
   prompt_key("Verify final product (client)")
-  verify_cmd = ("witness verify"
-                    " -f gittuf-delegation/bom-go-mod.json"
-                    " -a test-att.json"
-                    " -p policy-signed.json"
-                    " -k testpub.pem")
+  verify_cmd = ("in-toto-verify"
+                    " --verbose"
+                    " --layout root.layout"
+                    " --layout-key owner-alice/alice.pub")
   print(verify_cmd)
-  subprocess.call(shlex.split(verify_cmd))
-
-  prompt_key("Generate new SBOM with metadata")
-  sbom_cmd = ("protobomit generate"
-                    " --sbom gittuf-delegation/bom-go-mod.json"
-                    " --attestation test-att.json"
-                    " --policy policy-signed.json"
-                    " --publicKey testpub.pem")
-  print(sbom_cmd)
-  retval = subprocess.call(shlex.split(sbom_cmd))
+  retval = subprocess.call(shlex.split(verify_cmd))
   print("Return value: " + str(retval))
 
 def main():
@@ -57,11 +55,9 @@ def main():
 
   if args.clean:
     files_to_delete = [
+      "owner_alice/root.layout",
+      "build.776a00e2.link",
       "gittuf-delegation",
-      "new_sbom_file.sbom",
-      "policy-signed-json",
-      "policy.json",
-      "test.att",
     ]
 
     for path in files_to_delete:

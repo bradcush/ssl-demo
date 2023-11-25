@@ -1,0 +1,8 @@
+run:
+  signer-file-key-path: testkey.pem
+  trace: false
+verify:
+  attestations:
+    - "test-att.json"
+  policy: policy-signed.json
+  publickey: testpub.pem
