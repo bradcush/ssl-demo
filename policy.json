@@ -1,0 +1,33 @@
+{
+  "expires": "2023-12-17T23:57:40-05:00",
+  "steps": {
+    "build": {
+      "name": "build",
+      "attestations": [
+        {
+          "type": "https://witness.dev/attestations/material/v0.1",
+          "regopolicies": []
+        },
+        {
+          "type": "https://witness.dev/attestations/command-run/v0.1",
+          "regopolicies": []
+        },
+        {
+          "type": "https://witness.dev/attestations/product/v0.1",
+          "regopolicies": []
+        }
+      ],
+      "functionaries": [
+        {
+          "publickeyid": "b52910f6fc3c4a007b410b076e281c9e2bd937139d1f7b7ae04bf1f70ee9900c"
+        }
+      ]
+    }
+  },
+  "publickeys": {
+    "b52910f6fc3c4a007b410b076e281c9e2bd937139d1f7b7ae04bf1f70ee9900c": {
+      "keyid": "b52910f6fc3c4a007b410b076e281c9e2bd937139d1f7b7ae04bf1f70ee9900c",
+      "key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQTk4ci9aRXJWd1lYdWdVbDI1by9OOHBqOU5Mek9waTNlWmJXN0dqbmI5SGc9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo="
+    }
+  }
+}
